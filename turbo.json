@@ -1,15 +1,18 @@
 {
   "$schema": "https://turborepo.com/schema.json",
   "tasks": {
-    "build": {
-      "outputs": ["dist/**"]
-    },
-    "check-types": {
-      "dependsOn": ["^check-types"]
-    },
+    "typecheck": {},
+    "format": {},
+    "lint": {},
+    "test": {},
     "dev": {
       "persistent": true,
       "cache": false
-    }
+    },
+    "build": {
+      "outputs": ["dist/**", "build/**", ".react-router/**"]
+    },
+    "start": {},
+    "clean": {}
   }
 }
