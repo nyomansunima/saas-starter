@@ -15,11 +15,17 @@
     "rootDirs": [".", "./.react-router/types"],
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./app/*"]
+      "@shared/*": ["./src/shared/*"],
+      "@features/*": ["./src/features/*"],
+      "@app/*": ["./src/app/*"],
+      "@/*": ["./src/*"],
+      "~/*": ["./*"]
     },
     "esModuleInterop": true,
     "verbatimModuleSyntax": true,
     "noEmit": true,
+    "allowJs": true,
+    "noImplicitAny": false,
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true
